@@ -1,0 +1,226 @@
+{
+	"version": 1,
+	"allow_edit": true,
+	"plugins": [],
+	"panes": [
+		{
+			"title": "Automovil 1",
+			"width": 1,
+			"row": {
+				"3": 5,
+				"4": 5,
+				"5": 1
+			},
+			"col": {
+				"3": 1,
+				"4": 1,
+				"5": 2
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "gauge",
+					"settings": {
+						"title": "Velocidad Km/h",
+						"value": "datasources[\"lo1lf6\"][\"ABC\"][0][\"speed\"]",
+						"min_value": 0,
+						"max_value": "60"
+					}
+				},
+				{
+					"type": "sparkline",
+					"settings": {
+						"title": "Historico velocidad",
+						"value": [
+							"datasources[\"lo1lf6\"][\"ABC\"][0][\"speed\"]"
+						],
+						"legend": "Km/h"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "ID",
+						"size": "regular",
+						"value": "datasources[\"lo1lf6\"][\"ABC\"][0][\"id\"]",
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Estado",
+						"size": "regular",
+						"value": "datasources[\"lo1lf6\"][\"ABC\"][0][\"state\"]",
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Viraje",
+						"size": "regular",
+						"value": "datasources[\"lo1lf6\"][\"ABC\"][0][\"customProps\"][\"turnSignal\"]",
+						"animate": true
+					}
+				},
+				{
+					"type": "google_map",
+					"settings": {
+						"lat": "datasources[\"lo1lf6\"][\"ABC\"][0][\"lat\"]",
+						"lon": "datasources[\"lo1lf6\"][\"ABC\"][0][\"lng\"]"
+					}
+				}
+			]
+		},
+		{
+			"title": "Automovil 2",
+			"width": 1,
+			"row": {
+				"3": 1,
+				"4": 1,
+				"5": 1
+			},
+			"col": {
+				"3": 1,
+				"4": 1,
+				"5": 3
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "gauge",
+					"settings": {
+						"title": "Velocidad",
+						"value": "datasources[\"lo1lf6\"][\"DEF\"][0][\"speed\"]",
+						"units": "Km/h",
+						"min_value": 0,
+						"max_value": "60"
+					}
+				},
+				{
+					"type": "sparkline",
+					"settings": {
+						"title": "Historico velocidad",
+						"value": [
+							"datasources[\"lo1lf6\"][\"DEF\"][0][\"speed\"]"
+						],
+						"legend": "Km/h"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "ID",
+						"size": "regular",
+						"value": "datasources[\"lo1lf6\"][\"DEF\"][0][\"id\"]",
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Estado",
+						"size": "regular",
+						"value": "datasources[\"lo1lf6\"][\"DEF\"][0][\"state\"]",
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Viraje",
+						"size": "regular",
+						"value": "datasources[\"lo1lf6\"][\"DEF\"][0][\"customProps\"][\"turnSignal\"]",
+						"animate": true
+					}
+				},
+				{
+					"type": "google_map",
+					"settings": {
+						"lat": "datasources[\"lo1lf6\"][\"DEF\"][0][\"lat\"]",
+						"lon": "datasources[\"lo1lf6\"][\"DEF\"][0][\"lng\"]"
+					}
+				}
+			]
+		},
+		{
+			"width": 1,
+			"row": {
+				"5": 1
+			},
+			"col": {
+				"5": 4
+			},
+			"col_width": 1,
+			"widgets": [
+				{
+					"type": "gauge",
+					"settings": {
+						"title": "Velocidad [Km/h]",
+						"value": "datasources[\"lo1lf6\"][\"GHI\"][0][\"speed\"]",
+						"units": "Km/h",
+						"min_value": 0,
+						"max_value": "60"
+					}
+				},
+				{
+					"type": "sparkline",
+					"settings": {
+						"title": "Historico velocidad",
+						"value": [
+							"datasources[\"lo1lf6\"][\"GHI\"][0][\"speed\"]"
+						],
+						"legend": "Km/h"
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "ID",
+						"size": "regular",
+						"value": "datasources[\"lo1lf6\"][\"GHI\"][0][\"id\"]",
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Estado",
+						"size": "regular",
+						"value": "datasources[\"lo1lf6\"][\"GHI\"][0][\"state\"]",
+						"animate": true
+					}
+				},
+				{
+					"type": "text_widget",
+					"settings": {
+						"title": "Viraje",
+						"size": "regular",
+						"value": "datasources[\"lo1lf6\"][\"GHI\"][0][\"customProps\"][\"turnSignal\"]",
+						"animate": true
+					}
+				},
+				{
+					"type": "google_map",
+					"settings": {
+						"lat": "datasources[\"lo1lf6\"][\"GHI\"][0][\"lat\"]",
+						"lon": "datasources[\"lo1lf6\"][\"GHI\"][0][\"lng\"]"
+					}
+				}
+			]
+		}
+	],
+	"datasources": [
+		{
+			"name": "lo1lf6",
+			"type": "ibm_iotf",
+			"settings": {
+				"org_id": "lo1lf6",
+				"api_key": "a-lo1lf6-n7yukx13rs",
+				"api_auth_token": "bw8ajqUi*OGzc5L2yc"
+			}
+		}
+	],
+	"columns": 5
+}
